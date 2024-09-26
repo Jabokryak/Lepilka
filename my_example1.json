@@ -8,7 +8,12 @@
         ,"silence": true
         ,"duration": 1
     }
-    ,{  "method": "foreach"
+    ,{  "method": "add"
+        ,"url": "https://www.youtube.com/watch?v=YxIiPLVR6NA"
+        ,"file": "Avicii - Hey Brother.mp3"
+        ,"duration": 12
+    }
+,{  "method": "foreach"
         ,"import_folder": "Оригиналы"
         ,"export_folder": "Результат %Y%m%d/"
         ,"file_mask": ".+(mp3|wav)$"
@@ -19,6 +24,11 @@
             ,{  "method": "add"
                 ,"silence": true
                 ,"duration": 1
+            }
+            ,{  "method": "add"
+                ,"url": "https://www.tiktok.com/@navigatorrecords/video/7003013167064337666"
+                ,"file": "ДДТ_осень.mp3"
+                ,"duration": 5
             }
             ,{  "method": "add"
                 ,"file": "Фоновая/melancholic guitar.wav"
