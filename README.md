@@ -3,8 +3,8 @@
 Для запуска программы должен быть установлен Python. Также необходимо скачать ffmpeg (https://ffmpeg.org/download.html или прямая ссылка на одну из сборок https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) - набор библиотек для обработки звука, эти библиотеки использует библиотека pydub Питона. Для сохранения аудио с YouTube используется библиотека pytubefix.
 Скаченные файлы ffmpeg.exe и ffprobe.exe можно положить в папку ffmpeg, расположенную в той же папке, что и скрипт lepilka.py (путь этой папки добавляется в Path в файле lepilka.bat). Либо добавить путь до этих файлов в переменную окружения Path.
 ## Зависимости
-pip install pydub
-pip install pytubefix
+  pip install pydub
+  pip install pytubefix
 
 ## Файл с командами
 Порядок наложения и объединения аудио фрагментов задаётся в виде json-файла, путь к котрому передаётся в качестве параметра скрипту.
