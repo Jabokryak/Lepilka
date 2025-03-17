@@ -223,12 +223,12 @@ class LepilkaStep:
             Path(folder_name).mkdir(mode = 0o777, parents = True, exist_ok = True)
             
             if url.startswith("https://www.youtube.com"):
-                yt = YouTube(url)
+                yt = YouTube(url, 'WEB', )
                 
                 audio_filename = folder_name + '/' + (file_name or yt.title + ".mp3")
  
                 ys = yt.streams.get_audio_only()
-                ys.download(filename = audio_filename)
+                ys.download(output_path = folder_name, filename = file_name or yt.title + ".mp3")
             elif url.startswith("https://www.tiktok.com"):
                 i = 20
                 while i > 0:

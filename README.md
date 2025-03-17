@@ -2,10 +2,11 @@
 ## Лепилка позволяет объединять и накладывать аудио фрагменты.
 Для запуска программы должен быть установлен Python. Также необходимо скачать ffmpeg (https://ffmpeg.org/download.html или прямая ссылка на одну из сборок https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) - набор библиотек для обработки звука, эти библиотеки использует библиотека pydub Питона.<br>
 Скаченные файлы ffmpeg.exe и ffprobe.exe можно положить в папку ffmpeg, расположенную в той же папке, что и скрипт lepilka.py (путь этой папки добавляется в Path в файле lepilka.bat). Либо добавить путь до этих файлов в переменную окружения Path.<br>
-Для сохранения аудио с YouTube используется библиотека pytubefix.<br>
+Для сохранения аудио с YouTube используется библиотека pytubefix, для работы которой нужно установить NodeJs.<br>
 
 ## Зависимости
 <code>
+pip install audioop-lts
 pip install pydub
 pip install pytubefix
 </code>
